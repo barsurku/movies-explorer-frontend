@@ -1,0 +1,41 @@
+body {
+  font-family: 'Inter', 'Arial', sans-serif;
+}
+
+@import url(../src/vendor/normalize.css);
+@import url(../src/vendor/fonts/fonts.css);
+
+@import url(../src/components/app/App.css);
+@import url(../src/components/Footer/Footer.css);
+
+@import url(../src/components/WelcomePages/SubmitBtn/SubmitBtn.css);
+@import url(../src/components/WelcomePages/WelcomeText/WelcomeText.css);
+@import url(../src/components/WelcomePages/WelcomePagesInputs/WelcomePagesInputs.css);
+
+@import url(../src/components/Header/Header.css);
+@import url(../src/components/Login/Login.css);
+
+@import url(../src/components/main/Main.css);
+@import url(../src/components/main/AboutMe/AboutMe.css);
+@import url(../src/components/main/AboutProject/AboutProject.css);
+@import url(../src/components/main/NavTab/NavTab.css);
+@import url(../src/components/main/Portfolio/Portfolio.css);
+@import url(../src/components/main/Promo/Promo.css);
+@import url(../src/components/main/Techs/Techs.css);
+
+@import url(../src/components/MobileMenu/MobileMenu.css);
+
+@import url(../src/components/Movies/Movies.css);
+@import url(../src/components/Movies/ShowMoreMoviesBtn/ShowMoreMovies.css);
+@import url(../src/components/Movies/MoviesCard/MoviesCard.css);
+@import url(../src/components/Movies/MoviesCardList/MoviesCardList.css);
+@import url(../src/components/Movies/Preloader/Preloader.css);
+@import url(../src/components/Movies/SearchForm/SearchForm.css);
+
+@import url(../src/components/Navigation/Navigation.css);
+@import url(../src/components/Navigation/NavigationMobileMenu/NavigationMobileMenu.css);
+@import url(../src/components/Navigation/NavigationPromo/NavigationPromo.css);
+
+@import url(../src/components/NotFoundPage/NotFoundPage.css);
+@import url(../src/components/Profile/Profile.css);
+@import url(../src/components/Register/Register.css);

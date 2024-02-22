@@ -1,0 +1,30 @@
+.navtab__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navtab__link-about {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 10px 20px;
+    margin: 0;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.navtab__list-info:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 1024px) {
+    .navtab__link-about {
+        margin: 0 auto;
+    }
+}

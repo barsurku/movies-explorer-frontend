@@ -1,0 +1,49 @@
+.more-movies {
+    display: flex;
+    justify-content: center;
+}
+
+.more-movies__button {
+    color: #000000;
+    background: #F9F9F9;
+    width: 320px;
+    height: 36px;
+    padding: 0;
+    margin: 50px 0 76px;
+    border: none;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.52px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.more-movies__button:hover {
+    opacity: 0.6;
+}
+
+.more-movies__button_hide {
+    display: none;
+}
+
+.more-movies-show {
+    min-height: 166px;
+}
+
+.more-movies-hide {
+    min-height: 140px;
+}
+
+@media (max-width: 800px) {
+    .more-movies__button {
+        width: 320px;
+    }
+}
+
+@media (max-width: 320px) {
+    .more-movies__button {
+        width: 240px;
+    }
+}

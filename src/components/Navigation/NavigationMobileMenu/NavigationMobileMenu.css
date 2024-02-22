@@ -1,0 +1,122 @@
+.menu-movies {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0.46;
+}
+
+.menu-movies__links {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+    list-style-type: none;
+}
+
+.menu-movies__link {
+    color: #000000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.menu-movies__link:hover {
+    opacity: 0.6;
+}
+
+.active {
+    font-weight: 500;
+}
+
+.menu-movies__profile-link {
+    box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-decoration: none;
+    width: 100px;
+    height: 32px;
+    gap: 7px;
+    color: #000000;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+    font-size: 13px;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.menu-movies__profile-link:hover {
+    opacity: 0.6;
+}
+
+.menu-movies__profile-icon {
+    background-color: #F9F9F9;
+    width: 10.38px;
+    height: 10.67px;
+    background-image: url("../../../images/accountIconn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7px 7px;
+    border-radius: 50px;
+    margin-right: 3px;
+}
+
+.menu-icon {
+    background-color: #FFFFFF;
+    display: none;
+    background-image: url('../../../images/accountBlIcon.svg');
+    background-position: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    top: 15px;
+    right: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-icon:hover {
+    opacity: 0.6;
+}
+
+.menu-icon_close {
+    background-position: center;
+    background-image: url('../../../images/menuClose.svg');
+    background-color: #FFFFFF;
+    display: block;
+    position: fixed;
+    width: 22px;
+    height: 22px;
+    top: 22px;
+    right: 22px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-icon_close:hover {
+    opacity: 0.6;
+}
+
+@media (max-width: 1024px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-movies {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .menu-icon {
+        height: 43px;
+        width: 24px;
+        right: 22px;
+    }
+}

@@ -1,0 +1,42 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    max-width: 396px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.register__main {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome__register-inputs {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 134px 0;
+    gap: 24px;
+}
+
+@media (max-width: 900px) {
+    .register {
+        padding: 232px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .register {
+        padding: 56px 0 30px 0;
+        max-width: 260px;
+    }
+
+    .welcome__inputs {
+        margin: 0 0 222px 0;
+    }
+}
