@@ -29,6 +29,11 @@
     padding: 0;
 }
 
+.welcome__input:focus {
+    outline: 0;
+    border-bottom: 1px solid blue;
+}
+
 .welcome__input-error-text {
     color: #FF3055;
     font-size: 10px;

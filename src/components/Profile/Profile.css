@@ -59,6 +59,10 @@
     line-height: 13.31px;
 }
 
+.profile__input:focus {
+    outline: 0;
+}
+
 .profile__btns {
     text-align: center;
     margin-top: 220px;
@@ -151,6 +155,13 @@
 
     .profile__btns {
         margin-top: 210px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile {
+        max-height: 950px;
+        padding: 236px 0 269px 0;
     }
 }
 

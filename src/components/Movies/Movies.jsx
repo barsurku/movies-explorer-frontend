@@ -12,7 +12,7 @@ export default function Movies() {
   return (
     <>
       <Header />
-      <main className="movies">
+      <main className="movies-main">
         <SearchForm />
         {isPreloaderVisible ? (
           <Preloader />

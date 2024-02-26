@@ -16,7 +16,7 @@ export default function AboutMe() {
             заниматься фриланс-заказами и ушёл с постоянной работы.
           </p>
           <a
-            href="https://github.com/"
+            href="https://github.com/barsurku"
             className="about-me__link"
             target="_blank"
             rel="noreferrer"

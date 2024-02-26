@@ -13,6 +13,7 @@
     margin: 0;
     padding-bottom: 23px;
     border-bottom: 1px solid #000;
+    max-height: 40px;
 }
 
 .about-me__info {
@@ -64,6 +65,7 @@
     padding: 0;
     margin-bottom: 99px;
     margin-top: 0;
+    letter-spacing: -0.04em;
 }
 
 .about-me__link {
@@ -162,5 +164,16 @@
         width: 292px;
         height: 352px;
         margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 320px) {
+    .about-me {
+        padding-top: 85px;
+        padding-bottom: 70px;
+    }
+
+    .about-me__title {
+        padding-bottom: 28px;
     }
 }

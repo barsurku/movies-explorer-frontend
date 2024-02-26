@@ -6,7 +6,7 @@ export default function SubmitBtn() {
   //одинаковая привественная страница для login и register с использованием useLocation
   return (
     <div className="buttons">
-      <button className="buttons__submit">
+      <button type="submit" className="buttons__submit">
         {location.pathname === "/signup" ? "Зарегистрироваться" : "Войти"}
       </button>
       <div className="buttons__link">
@@ -17,7 +17,6 @@ export default function SubmitBtn() {
         </span>
         <Link
           to={location.pathname === "/signup" ? "/signin" : "/signup"}
-          className="buttons__link"
         >
           {location.pathname === "/signup" ? "Войти" : "Регистрация"}
         </Link>

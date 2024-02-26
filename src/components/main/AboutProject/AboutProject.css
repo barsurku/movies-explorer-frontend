@@ -95,6 +95,37 @@
         padding-top: 90px;
     }
 }
+
+@media (max-width: 768px) {
+    .about-project__text-discription {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .about-project__text-title {
+        padding: 0 0 22px;
+    }
+
+    .about-project__info {
+        gap: 30px;
+        margin-bottom: 93px;
+    }
+
+    .about-project__duration-discription {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .about-project__duration {
+        grid-template: 1fr/21% 79.1%;
+    }
+    
+}
+
 @media (max-width: 450px) {
     .about-project {
         padding-top: 70px;
@@ -128,5 +159,25 @@
     .about-project__duration-discription {
         margin: 10px 0 0;
         font-size: 11px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .about-project {
+        padding-top: 68px;
+    }
+
+    .about-project__title {
+        padding-bottom: 26px;
+    }
+
+    .about-project__text-title {
+        padding-bottom: 16px;
+        line-height: 21.78px; 
+    }
+
+    .about-project__duration {
+        grid-template: 1fr/36% 64%;
     }
 }

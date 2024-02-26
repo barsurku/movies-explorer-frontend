@@ -14,9 +14,9 @@ export default function NavigationMobileMenu() {
   return (
     <>
       {!isNavigationMobileMenuOpen ? (
-        <button className="menu-icon" onClick={toggleMenu} />
+        <button type="button" className="menu-icon" onClick={toggleMenu} />
       ) : (
-        <button className="menu-icon_close" onClick={toggleMenu} />
+        <button type="button" className="menu-icon_close" onClick={toggleMenu} />
       )}
       <MobileMenu isMenuOpen={isNavigationMobileMenuOpen} />
       <div className="menu-movies">

@@ -12,7 +12,7 @@ export default function Login() {
     <div className="login">
       <WelcomeText />
       <main className="login__main">
-        <form className="welcome-page">
+        <form className="welcome">
           <div className="welcome__login-inputs">
             <WelcomePagesInputs
               value={email}

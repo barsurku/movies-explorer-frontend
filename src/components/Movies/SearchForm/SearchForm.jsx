@@ -6,12 +6,15 @@ export default function SearchForm() {
           className="search__container-input"
           type="text"
           placeholder="Фильм"
+          minLength={2}
+          maxLength={30}
+          required
         />
         <button className="search__container-btn" type="button">
           Найти
         </button>
       </form>
-      <div className="search__checkbox">
+      <form className="search__checkbox">
         <label className="search__label">
           <input
             className="search__checkbox-gray"
@@ -21,7 +24,7 @@ export default function SearchForm() {
           <span className="search__checkbox-green"></span>
         </label>
         <p className="search__checkbox-text">Короткометражки</p>
-      </div>
+      </form>
     </section>
   );
 }

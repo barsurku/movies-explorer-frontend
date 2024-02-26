@@ -11,9 +11,9 @@ export default function WelcomeText() {
       <Link to={"/"} className="welcome-text__logo-container">
         <img src={logo} alt="Логотип" className="welcome-text__logo" />
       </Link>
-      <h2 className="welcome-text__title">
+      <h1 className="welcome-text__title">
         {location.pathname === "/signup" ? "Добро пожаловать!" : "Рады видеть!"}
-      </h2>
+      </h1>
     </header>
   );
 }

@@ -8,7 +8,7 @@ export default function Portfolio() {
         <li className="portfolio__element">
           <a
             className="portfolio__link"
-            href="https://github.com/"
+            href="https://github.com/barsurku/First-project"
             target="_blank"
             rel="noreferrer"
           >
@@ -23,7 +23,7 @@ export default function Portfolio() {
         <li className="portfolio__element">
           <a
             className="portfolio__link"
-            href="https://github.com/"
+            href="https://github.com/barsurku/russian-travel"
             target="_blank"
             rel="noreferrer"
           >
@@ -38,7 +38,7 @@ export default function Portfolio() {
         <li className="portfolio__element">
           <a
             className="portfolio__link"
-            href="https://github.com/"
+            href="https://github.com/barsurku/mesto"
             target="_blank"
             rel="noreferrer"
           >

@@ -13,7 +13,7 @@ export default function Register() {
     <div className="register">
       <WelcomeText />
       <main className="register__main">
-        <form className="welcome-page">
+        <form className="welcome">
           <div className="welcome__register-inputs">
             <WelcomePagesInput
               type="text"
@@ -41,7 +41,6 @@ export default function Register() {
               setValue={setPassword}
               span={"Пароль"}
               placeholder={"Введите пароль"}
-              classError={"form__input_error"}
               errorMessage={"Что-то пошло не так..."}
               required
             />
