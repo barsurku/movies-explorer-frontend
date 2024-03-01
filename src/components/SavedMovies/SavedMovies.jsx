@@ -1,5 +1,5 @@
-import SearchForm from "../Movies/SearchForm/SearchForm";
-import MoviesCardList from "../Movies/MoviesCardList/MoviesCardList";
+import SearchForm from "../SearchForm/SearchForm";
+import MoviesCardList from "../MoviesCardList/MoviesCardList";
 import { MOVIES_TIME } from "../../utils/constants";
 
 import { useCallback, useEffect, useState } from "react";

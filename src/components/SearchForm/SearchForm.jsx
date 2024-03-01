@@ -1,8 +1,8 @@
-import Checkbox from "../../Checkbox/Checkbox";
+import Checkbox from "../Checkbox/Checkbox";
 
-import { useForms } from "../../Form/Form";
+import { useForms } from "../Form/Form";
 import { useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 
 export default function SearchForm({
   isActiveCheckbox,

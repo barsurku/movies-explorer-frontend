@@ -15,7 +15,7 @@ import {
   WINDOW_420_SIZE,
   WINDOW_420_CARDS,
   WINDOW_230_SIZE,
-} from "../../../utils/constants";
+} from "../../utils/constants";
 
 export default function MoviesCardList({
   savedMovies,

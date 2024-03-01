@@ -1,6 +1,6 @@
-import SearchForm from "../../components/Movies/SearchForm/SearchForm";
+import SearchForm from "../SearchForm/SearchForm";
 import Preloader from "../../components/Movies/Preloader/Preloader";
-import MoviesCardList from "../../components/Movies/MoviesCardList/MoviesCardList";
+import MoviesCardList from "../MoviesCardList/MoviesCardList";
 
 import { moviesApi } from "../../utils/MoviesApi";
 import { MOVIES_TIME } from "../../utils/constants";
@@ -9,18 +9,18 @@ import { useCallback, useEffect, useState } from "react";
 
 export default function Movies({ savedMovies, onMovieLike, onMovieDelete }) {
   const [moviesList, setMoviesList] = useState([]);
-  const [shortFilmsSwitcher, setShortFilmsSwitcher] = useState(false);
+  const [isActiveCheckbox, setIsActiveCheckbox] = useState(false);
   const [foundedMovies, setFoundedMovies] = useState([]);
   const [searchResultsState, setSearchResultsState] = useState("");
   const [searchValue, setSearchValue] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
 
-  const [errors, setErrors] = useState("");
+  const [setErrors] = useState("");
 
   // Получить список фильмов с сервера
   function getMovies(searchResults) {
     if (moviesList.length !== 0) {
-      detectMovies(searchResults, shortFilmsSwitcher, moviesList);
+      detectMovies(searchResults, isActiveCheckbox, moviesList);
       setSearchValue(false);
       localStorage.setItem("searchValue", JSON.stringify(false));
     } else {
@@ -30,8 +30,8 @@ export default function Movies({ savedMovies, onMovieLike, onMovieDelete }) {
         .then((movies) => {
           localStorage.setItem("searchValue", JSON.stringify(true));
           setMoviesList(movies);
-          detectMovies(searchResults, shortFilmsSwitcher, movies);
-          setShortFilmsSwitcher(false);
+          detectMovies(searchResults, isActiveCheckbox, movies);
+          setIsActiveCheckbox(false);
         })
         .catch(() => {
           setErrors("Произошла ошибка");
@@ -72,7 +72,7 @@ export default function Movies({ savedMovies, onMovieLike, onMovieDelete }) {
 
       setMoviesList(movies);
       setSearchResultsState(searchResults);
-      setShortFilmsSwitcher(switcherCheckboxState);
+      setIsActiveCheckbox(switcherCheckboxState);
       setSearchValue(searchValue);
       detectMovies(searchResults, switcherCheckboxState, movies);
     }
@@ -84,8 +84,8 @@ export default function Movies({ savedMovies, onMovieLike, onMovieDelete }) {
         <SearchForm
           moviesList={moviesList}
           getMovies={getMovies}
-          shortFilmsSwitcher={shortFilmsSwitcher}
-          setShortFilmsSwitcher={setShortFilmsSwitcher}
+          isActiveCheckbox={isActiveCheckbox}
+          setIsActiveCheckbox={setIsActiveCheckbox}
           searchResultsState={searchResultsState}
           detectMovies={detectMovies}
         />
