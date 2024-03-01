@@ -61,7 +61,7 @@
 
 .movie__button {
     all: unset;
-    background-image: url(../../../images/unlikedMovie.svg);
+    background-image: url(../../images/unlikedMovie.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -73,7 +73,7 @@
 
 .movie__button_liked {
     all: unset;
-    background-image: url(../../../images/likedMovie.svg);
+    background-image: url(../../images/likedMovie.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -90,7 +90,7 @@
 
 .movie__button_delete {
     all: unset;
-    background-image: url(../../../images/deleteMovie.svg);
+    background-image: url(../../images/deleteMovie.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -103,7 +103,7 @@
 
 .movie__button_delete:hover {
     all: unset;
-    background-image: url(../../../images/deleteMovie.svg);
+    background-image: url(../../images/deleteMovie.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -170,7 +170,7 @@
     }
 
     .movie__button_delete {
-        background-image: url(../../../images/deleteMovie.svg);
+        background-image: url(../../images/deleteMovie.svg);
         opacity: 1;
     }
 }

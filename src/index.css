@@ -21,10 +21,10 @@ body {
 
 
 @import url(../src/components/Movies/Movies.css);
-@import url(../src/components/Movies/MoviesCard/MoviesCard.css);
-@import url(../src/components/Movies/MoviesCardList/MoviesCardList.css);
+@import url(../src/components/MoviesCard/MoviesCard.css);
+@import url(../src/components/MoviesCardList/MoviesCardList.css);
 @import url(../src/components/Movies/Preloader/Preloader.css);
-@import url(../src/components/Movies/SearchForm/SearchForm.css);
+@import url(../src/components/SearchForm/SearchForm.css);
 
 @import url(../src/components/Navigation/Navigation.css);
 
